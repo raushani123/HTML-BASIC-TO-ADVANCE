@@ -1,0 +1,13 @@
+h1{
+    color: aqua;
+    background-color: blueviolet;
+}
+a{
+    color: #e70404;
+    background-color: rgb(200, 255, 0);
+    margin: 60px;
+    
+}
+a:hover{
+    background-color: blue;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <style>
+        /* Border for the whole page */
+        body {
+            margin: 20px; /* Adds space around the border */
+            border: 5px solid black; /* Border color and thickness */
+            padding: 10px; /* Adds spacing inside the border */
+            font-family: Arial, sans-serif; /* Improve font appearance */
+        }
+        h1 {
+            text-align: center; /* Center the heading */
+            margin-bottom: 20px; /* Add space below heading */
+        }
+        table {
+            width: 50%;
+            margin: 0 auto; /* Center the table */
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px; /* Spacing inside table cells */
+        }
+    </style>
+</head>
+<body>
+    <h1>STUDENT REGISTRATION PAGE</h1>
+    <form>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone:</label></td>
+                <td><input type="tel" name="phone" id="phone"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Register</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
