@@ -1,13 +1,93 @@
-h1{
-    color: aqua;
-    background-color: blueviolet;
+
+
+
+
+
+
+
+
+
+h1 {
+    background-color: #3498db;
+    text-align: center;
+    height: 100px;
+    width: 1364px;
+    border-style: solid;
+    border-color: black;
+    padding: 25px; /* Add padding */
+    box-sizing: border-box; /* Ensures padding is included in the height and width */
 }
-a{
-    color: #e70404;
-    background-color: rgb(200, 255, 0);
-    margin: 60px;
+
+*{
+    margin: 0;
+    padding: 0;
     
+
 }
-a:hover{
-    background-color: blue;
+/* General styling for the nav bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 1px;
+    
+    height: 50px;
+    border: 1px solid #ccc;
+    background: linear-gradient(90deg, #3498db, #1abc9c, #9b59b6, #e74c3c);
+    background-size: 400% 100%;
+    animation: moveBackground 10s linear infinite; /* Apply background animation */
+    overflow: hidden; /* Ensures smooth movement without clipping */
 }
+
+/* Links styling */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.9s ease-in-out;
+    animation: moveText 1s linear infinite; /* Apply text animation */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+
+/* Input fields styling */
+nav input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    animation: moveText 10s linear infinite; /* Apply text animation */
+}
+
+/* Background movement animation */
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+/* Text movement animation */
+@keyframes moveText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+   
